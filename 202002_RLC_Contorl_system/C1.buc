@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C0"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="TRAIN_POSITION"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=")" org.eventb.core.identifier="AN"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.identifier="Approaching"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="+" org.eventb.core.identifier="Closing"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="," org.eventb.core.identifier="Exit"/>
+<org.eventb.core.axiom name="-" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(TRAIN_POSITION, {Null_T},{AN},{Approaching}, {Closing}, {Exit})"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="." org.eventb.core.identifier="Null_T"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="/" org.eventb.core.identifier="DISTANCE"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="0" org.eventb.core.identifier="TimeofMA"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="1" org.eventb.core.identifier="TimetoApproaching"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="2" org.eventb.core.identifier="TimetoClosing"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="3" org.eventb.core.identifier="TimetoExit"/>
+<org.eventb.core.axiom name="4" org.eventb.core.label="axm2" org.eventb.core.predicate="DISTANCE = ℤ"/>
+<org.eventb.core.axiom name="5" org.eventb.core.label="axm3" org.eventb.core.predicate="TimeofMA = 30"/>
+<org.eventb.core.axiom name="6" org.eventb.core.label="axm4" org.eventb.core.predicate="TimetoApproaching = 26"/>
+<org.eventb.core.axiom name="7" org.eventb.core.label="axm5" org.eventb.core.predicate="TimetoClosing = 22"/>
+<org.eventb.core.axiom name="8" org.eventb.core.label="axm6" org.eventb.core.predicate="TimetoExit = 18"/>
+</org.eventb.core.contextFile>

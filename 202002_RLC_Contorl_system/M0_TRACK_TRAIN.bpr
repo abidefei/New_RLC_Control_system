@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="TRACK">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="TRAINNUM" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(TRACK×ℤ))∈(∅ ⦂ ℙ(TRACK)) → TRAINNUM"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Add_track/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="TRACK">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p3,p4">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Maxtracks" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="sumtracks" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬k∈track"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="sumtracks+1∈ℕ"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="train⊆TRAIN">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="k∉track"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="track⊆TRACK"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="sumtracks∈ℕ"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="sumtracks&lt;Maxtracks"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Add_track/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="TRACK" org.eventb.core.psManual="true">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p7,p1,p8"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC4" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
+<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC4"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="TRAINNUM" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prIdent name="trainintrack" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="TRAINNUM=ℕ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬k∈track"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="trainintrack{k ↦ 0}∈track∪{k} → TRAINNUM"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="Maxtracks=2">
+<org.eventb.core.prIdent name="Maxtracks" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="trainintrack∈track → TRAINNUM"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="train⊆TRAIN">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="k∉track"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="track⊆TRACK"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="sumtracks∈ℕ">
+<org.eventb.core.prIdent name="sumtracks" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Remove_track/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="TRACK">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p2"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p6">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="TRAINNUM" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prIdent name="trainintrack" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="trainintrack∈TRACK ⇸ ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="k∈dom(trainintrack)∧trainintrack∈TRACK ⇸ ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="trainintrack∈track → TRAINNUM"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="train⊆TRAIN">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="track⊆TRACK"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="k∈track"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="k∈dom(trainintrack)"/>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="track"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Remove_track/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="TRACK">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p3,p4,p1">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="sumtracks" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prIdent name="trainintrack" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="trainintrack(k)=0"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="train⊆TRAIN">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="sumtracks − 1∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="track⊆TRACK"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="sumtracks∈ℕ"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="k∈track"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="sumtracks&gt;0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Remove_track/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="TRACK">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p3,p1,p6,p4,p7,p8,p5,p9,p2">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="MAXTRAINSinATrack" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="Maxtracks" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="TRAINNUM" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="sumtracks" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prIdent name="trainintrack" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="trainintrack∈TRACK ⇸ ℤ"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="Maxtracks=2"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="trainintrack∈track → TRAINNUM"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="{k} ⩤ trainintrack∈track ∖ {k} → TRAINNUM"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="k∈track"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="sumtracks&gt;0"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="k∈dom(trainintrack)"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="MAXTRAINSinATrack=2"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="TRAINNUM=ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="trainintrack(k)=0"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="train⊆TRAIN">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="track⊆TRACK"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="sumtracks∈ℕ"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Add_train/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="TRACK">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p2"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p8">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="TRAINNUM" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prIdent name="trainintrack" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="n∉train">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="trainintrack∈TRACK ⇸ ℤ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬n∈train">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="k∈dom(trainintrack)∧trainintrack∈TRACK ⇸ ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="trainintrack∈track → TRAINNUM"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="train⊆TRAIN">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="track⊆TRACK"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="k∈track"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="k∈dom(trainintrack)"/>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="track"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Add_train/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6" org.eventb.core.prSets="TRACK" org.eventb.core.psManual="true">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p6,p2,p5,p11"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC4" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
+<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC4"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="MAXTRAINSinATrack" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="TRAINNUM" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prIdent name="trainintrack" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="trainintrack{k ↦ trainintrack(k)+1}∈track → TRAINNUM"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="trainintrack(k)&lt;MAXTRAINSinATrack"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="TRAINNUM=ℕ"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="n∉train">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="trainintrack∈TRACK ⇸ ℤ"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬n∈train">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="trainintrack∈track → TRAINNUM"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="train⊆TRAIN">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="track⊆TRACK"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="k∈track"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="k∈dom(trainintrack)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="MAXTRAINSinATrack=2"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Add_train/act2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="TRACK">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="trainintrack" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤∧⊤"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="trainintrack∈TRACK ⇸ ℤ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="n∉train">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬n∈train">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="k∈dom(trainintrack)∧trainintrack∈TRACK ⇸ ℤ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="k∈dom(trainintrack)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Delete_train/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="TRACK">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p2"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p6">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="TRAINNUM" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prIdent name="trainintrack" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="trainintrack∈TRACK ⇸ ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="k∈dom(trainintrack)∧trainintrack∈TRACK ⇸ ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="trainintrack∈track → TRAINNUM"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="train⊆TRAIN">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="track⊆TRACK"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="k∈track"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="k∈dom(trainintrack)"/>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="track"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Delete_train/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="TRACK,TRAIN">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p5,p1,p7,p6,p2,p8,p4,p9,p3">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="MAXTRAINSinATrack" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="Maxtracks" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="TRAINNUM" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.prIdent name="sumtracks" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="trainintrack" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="n∈train"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="trainintrack∈TRACK ⇸ ℤ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="Maxtracks=2"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="trainintrack∈track → TRAINNUM"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="k∈track"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="k∈dom(trainintrack)"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="MAXTRAINSinATrack=2"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="TRAINNUM=ℕ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="trainintrack(k)&gt;0"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="trainintrack{k ↦ trainintrack(k) − 1}∈track → TRAINNUM"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="train⊆TRAIN"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="track⊆TRACK"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="sumtracks∈ℕ"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Delete_train/act2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="TRACK">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="trainintrack" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤∧⊤"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="trainintrack∈TRACK ⇸ ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="k∈dom(trainintrack)∧trainintrack∈TRACK ⇸ ℤ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="k∈dom(trainintrack)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

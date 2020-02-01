@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C2"/>
+<org.eventb.core.carrierSet name=")" org.eventb.core.identifier="EBarrier_States"/>
+<org.eventb.core.carrierSet name="+" org.eventb.core.identifier="IBarrier_States"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="," org.eventb.core.identifier="Eclosing"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="-" org.eventb.core.identifier="Eopening"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="." org.eventb.core.identifier="Iclosing"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="/" org.eventb.core.identifier="Iopening"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="2" org.eventb.core.identifier="InitiaE"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="3" org.eventb.core.identifier="InitiaI"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="4" org.eventb.core.identifier="Time_EBarrier_keep_opening"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="5" org.eventb.core.identifier="Time_IBarrier_keep_opening"/>
+<org.eventb.core.axiom name="6" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(EBarrier_States, {InitiaE}, {Eclosing}, {EKeep_closing}, {Eopening}, {EKeep_opening})"/>
+<org.eventb.core.axiom name="7" org.eventb.core.label="axm2" org.eventb.core.predicate="partition(IBarrier_States, {InitiaI}, {Iclosing}, {IKeep_closing}, {Iopening})"/>
+<org.eventb.core.axiom name="8" org.eventb.core.label="axm3" org.eventb.core.predicate="Time_EBarrier_keep_opening=90"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="9" org.eventb.core.identifier="EKeep_opening"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=":" org.eventb.core.identifier="EKeep_closing"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=";" org.eventb.core.identifier="IKeep_closing"/>
+<org.eventb.core.axiom name="=" org.eventb.core.label="axm4" org.eventb.core.predicate="Time_IBarrier_keep_opening=90"/>
+<org.eventb.core.constant name="&gt;" org.eventb.core.identifier="Time_open"/>
+<org.eventb.core.axiom name="?" org.eventb.core.label="axm5" org.eventb.core.predicate="Time_open = 2"/>
+</org.eventb.core.contextFile>

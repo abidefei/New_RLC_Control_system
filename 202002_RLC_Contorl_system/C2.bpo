@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="TRACK" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.poIdentifier name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.poIdentifier name="MAXTRAINSinATrack" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Maxtracks" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TRAINNUM" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poPredicate name="MAXTRAINSinATracl" org.eventb.core.predicate="MAXTRAINSinATrack=2" org.eventb.core.source="/2019_RLC_Control_system/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="MAXTRAINSinATracm" org.eventb.core.predicate="Maxtracks=2" org.eventb.core.source="/2019_RLC_Control_system/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="MAXTRAINSinATracn" org.eventb.core.predicate="TRAINNUM=ℕ" org.eventb.core.source="/2019_RLC_Control_system/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#."/>
+<org.eventb.core.poIdentifier name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+<org.eventb.core.poIdentifier name="AN" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="DISTANCE" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="TimeofMA" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TimetoApproaching" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TimetoClosing" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TimetoExit" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="TimetoApproachinh" org.eventb.core.predicate="partition(TRAIN_POSITION,{Null_T},{AN},{Approaching},{Closing},{Exit})" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="TimetoApproachini" org.eventb.core.predicate="DISTANCE=ℤ" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="TimetoApproachinj" org.eventb.core.predicate="TimeofMA=30" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#5"/>
+<org.eventb.core.poPredicate name="TimetoApproachink" org.eventb.core.predicate="TimetoApproaching=26" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#6"/>
+<org.eventb.core.poPredicate name="TimetoApproachinl" org.eventb.core.predicate="TimetoClosing=22" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#7"/>
+<org.eventb.core.poPredicate name="TimetoApproachinm" org.eventb.core.predicate="TimetoExit=18" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#8"/>
+<org.eventb.core.poIdentifier name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.poIdentifier name="MAinfor" org.eventb.core.type="ℙ(MAinfor)"/>
+<org.eventb.core.poIdentifier name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+<org.eventb.core.poIdentifier name="Train_MA" org.eventb.core.type="ℙ(Train_MA)"/>
+<org.eventb.core.poIdentifier name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.poIdentifier name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.poIdentifier name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.poIdentifier name="MA" org.eventb.core.type="Train_MA"/>
+<org.eventb.core.poIdentifier name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="Null_MA" org.eventb.core.type="Train_MA"/>
+<org.eventb.core.poIdentifier name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="no" org.eventb.core.type="MAinfor"/>
+<org.eventb.core.poIdentifier name="receive" org.eventb.core.type="MAinfor"/>
+<org.eventb.core.poIdentifier name="reclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="send" org.eventb.core.type="MAinfor"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/C2.bpo|org.eventb.core.poFile#C2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(Crossing_Check,{Unclear},{clear},{reclear},{Null})" org.eventb.core.source="/2019_RLC_Control_system/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#0"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="partition(Train_Ctrl,{Brake},{KeepGoing},{Clear_Ctrl})" org.eventb.core.source="/2019_RLC_Control_system/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#1"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="partition(Train_MA,{MA},{Null_MA})" org.eventb.core.source="/2019_RLC_Control_system/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#3"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="partition(MAinfor,{send},{receive},{no})" org.eventb.core.source="/2019_RLC_Control_system/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#8"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

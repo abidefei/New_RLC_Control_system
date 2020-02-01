@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="TRACK" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.poIdentifier name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.poIdentifier name="MAXTRAINSinATrack" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Maxtracks" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TRAINNUM" org.eventb.core.type="ℙ(ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="MAXTRAINSinATrack=2" org.eventb.core.source="/2019_RLC_Control_system/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Maxtracks=2" org.eventb.core.source="/2019_RLC_Control_system/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="TRAINNUM=ℕ" org.eventb.core.source="/2019_RLC_Control_system/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#."/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

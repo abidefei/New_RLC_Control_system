@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M0_TRACK_TRAIN"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="C1"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=")" org.eventb.core.identifier="track"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.identifier="train"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="+" org.eventb.core.identifier="sumtracks"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="," org.eventb.core.identifier="trainintrack"/>
+<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="train_position ≔ ∅" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="train_RLC_time  ≔ ∅" org.eventb.core.label="act6"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Time ≔ 0" org.eventb.core.label="act7"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Speedupdate_flag ≔ 0" org.eventb.core.label="act8"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="amountoftrains ≔ 0" org.eventb.core.label="act9"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="Exit_flag ≔ 0" org.eventb.core.label="act10"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="Closing_flag ≔ 0" org.eventb.core.label="act11"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Add_track">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Add_track"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Remove_track">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Remove_track"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Add_train">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Add_train"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="sumtracks &gt; 0"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="train_position(n) ≔ AN" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="train_RLC_time(n) ≔ TimeofMA" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="amountoftrains ≔ amountoftrains +1 " org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Delete_train">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Delete_train"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="sumtracks &gt; 0"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd5" org.eventb.core.predicate="train_position(n) = Exit"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd6" org.eventb.core.predicate="amountoftrains &gt; 0 "/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="train_position ≔ {n} ⩤ train_position" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="train_RLC_time  ≔ {n} ⩤ train_RLC_time " org.eventb.core.label="act4"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="amountoftrains ≔ amountoftrains − 1" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="2" org.eventb.core.identifier="train_position"/>
+<org.eventb.core.invariant name="3" org.eventb.core.label="inv1" org.eventb.core.predicate="train_position ∈ train → TRAIN_POSITION"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="4" org.eventb.core.identifier="train_RLC_time"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="5" org.eventb.core.identifier="Time"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="6" org.eventb.core.identifier="Speedupdate_flag"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="7" org.eventb.core.identifier="amountoftrains"/>
+<org.eventb.core.invariant name="8" org.eventb.core.label="inv2" org.eventb.core.predicate="train_RLC_time ∈ train → DISTANCE"/>
+<org.eventb.core.invariant name="9" org.eventb.core.label="inv3" org.eventb.core.predicate="Time ∈ ℕ"/>
+<org.eventb.core.invariant name=":" org.eventb.core.label="inv4" org.eventb.core.predicate="Speedupdate_flag ∈ ℕ"/>
+<org.eventb.core.invariant name=";" org.eventb.core.label="inv5" org.eventb.core.predicate="amountoftrains ∈ ℕ"/>
+<org.eventb.core.event name="=" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Distance_update">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="n"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="n ∈ train"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="train_RLC_time(n) &gt; 1"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="Speedupdate_flag = Time ∧ Time &gt; 0"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd4" org.eventb.core.predicate="amountoftrains &gt; 0"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd5" org.eventb.core.predicate="ran(train_RLC_time) ≠ ∅ "/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="train_RLC_time ≔(λq·q ∈ dom(train_RLC_time) ∣train_RLC_time(q)−1)" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="." org.eventb.core.assignment="Speedupdate_flag ≔ Speedupdate_flag + 1" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Train_to_Approaching">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="n"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="n ∈ train"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="train_position(n) = AN"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="train_RLC_time(n) ≤ TimetoApproaching "/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="train_position(n) ≔  Approaching" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="?" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Train_to_Closing">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="n"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="n ∈ train"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="train_position(n) = Approaching"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="train_RLC_time(n) ≤ TimetoClosing "/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="train_position(n) ≔  Closing" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="Closing_flag ≔1" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="@" org.eventb.core.identifier="Exit_flag"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="A" org.eventb.core.identifier="Closing_flag"/>
+<org.eventb.core.invariant name="B" org.eventb.core.label="inv6" org.eventb.core.predicate="Exit_flag ∈ ℕ"/>
+<org.eventb.core.invariant name="C" org.eventb.core.label="inv7" org.eventb.core.predicate="Closing_flag ∈ ℕ"/>
+<org.eventb.core.event name="D" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Train_to_Exit">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="n"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="n ∈ train"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="train_position(n) = Closing"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="train_RLC_time(n) ≤ TimetoExit"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="train_position(n) ≔  Exit" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="Exit_flag ≔ 1" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="E" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Tick_Tock">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Speedupdate_flag = 0 ∨ Speedupdate_flag &gt; Time "/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="Time ≔ Time + 1" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Speedupdate_flag ≔ Time + 1" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

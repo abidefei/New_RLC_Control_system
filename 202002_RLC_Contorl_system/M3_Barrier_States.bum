@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M2_Clearing_check"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="C3"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=")" org.eventb.core.identifier="track"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.identifier="train"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="+" org.eventb.core.identifier="sumtracks"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="," org.eventb.core.identifier="trainintrack"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="2" org.eventb.core.identifier="train_position"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="4" org.eventb.core.identifier="train_RLC_time"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="5" org.eventb.core.identifier="Time"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="6" org.eventb.core.identifier="Speedupdate_flag"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="7" org.eventb.core.identifier="amountoftrains"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="@" org.eventb.core.identifier="Exit_flag"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="A" org.eventb.core.identifier="Closing_flag"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="L" org.eventb.core.identifier="RLC_states"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="M" org.eventb.core.identifier="RLC_for_train"/>
+<org.eventb.core.event name="U" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="EBarrier_infor ≔ InitiaE" org.eventb.core.label="act17"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="IBarrier_infor ≔ InitiaI" org.eventb.core.label="act18"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Iopening_time ≔ 0" org.eventb.core.label="act19"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Eopening_time ≔ 0" org.eventb.core.label="act20"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="V" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Add_track">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Add_track"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="W" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Remove_track">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Remove_track"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="X" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Add_train">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Add_train"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="Y" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Delete_train">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Delete_train"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="Z" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Distance_update">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Distance_update"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd6" org.eventb.core.predicate="train ≠ ∅ ⇒&#13;&#10;(∀k · k ∈ train ⇒ train_RLC_time(k) &gt;18)"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd7" org.eventb.core.predicate="IBarrier_infor =  Iopening ⇒&#13;&#10;(∀q·q ∈ train_RLC_time[dom(train_position ⩥ {Exit})]&#13;&#10;∧ q ∉ ∅ ⇒ q  − TimetoApproaching&#13;&#10;&gt;  Time_open + 1) ∨ EBarrier_infor =  EKeep_opening&#13;&#10;∨  EBarrier_infor =  EKeep_closing "/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd8" org.eventb.core.predicate="(∃k· k ∈ train ∧ (train_position(k) = Closing))&#13;&#10;⇒ RLC_for_train = KeepGoing ∧&#13;&#10;(∃k· k ∈ train ∧ (train_MA(k) = MA)) ∧ &#13;&#10;RLC_states =clear"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="[" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Train_to_Approaching">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Train_to_Approaching"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="IBarrier_infor = InitiaI ∨ IBarrier_infor = Iopening&#13;&#10; ∨ IBarrier_infor = IKeep_closing"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd5" org.eventb.core.predicate="EBarrier_infor = InitiaE ∨ EBarrier_infor = EKeep_opening&#13;&#10;∨  EBarrier_infor = EKeep_closing"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="\" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Train_to_Closing">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Train_to_Closing"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="]" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Train_to_Exit">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Train_to_Exit"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd6" org.eventb.core.predicate="IBarrier_infor =  Iopening ⇒  &#13;&#10;(∀q·q ∈ train_RLC_time[dom(train_position ⩥ {Exit})]&#13;&#10;∧ q ∉ ∅ ⇒ q  − TimetoApproaching&#13;&#10;&gt;  Time_open )"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="^" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Tick_Tock">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Tick_Tock"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SendUnclearMessage">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="SendUnclearMessage"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd3" org.eventb.core.predicate="RLC_states ≠ clear ∨ EBarrier_infor ≠ EKeep_closing"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="`" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SendclearMessage">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="SendclearMessage"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="RLC_states ≠ Unclear ∧ EBarrier_infor = EKeep_closing "/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd5" org.eventb.core.predicate=" IBarrier_infor =  IKeep_closing"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd6" org.eventb.core.predicate="RLC_for_train ≠ Brake"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="a" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SendreclearMessage">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="SendreclearMessage"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="EBarrier_infor = EKeep_opening"/>
+</org.eventb.core.event>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="b" org.eventb.core.identifier="EBarrier_infor"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="d" org.eventb.core.identifier="IBarrier_infor"/>
+<org.eventb.core.invariant name="f" org.eventb.core.label="inv1" org.eventb.core.predicate="EBarrier_infor∈ EBarrier_States"/>
+<org.eventb.core.invariant name="g" org.eventb.core.label="inv2" org.eventb.core.predicate="IBarrier_infor∈ IBarrier_States"/>
+<org.eventb.core.event name="h" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="IBarrier_closing">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="IBarrier_infor = Iopening ∨ IBarrier_infor = InitiaI"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="n ∈ train"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="train_position(n) =  Approaching&#13;&#10;∨ train_position(n) =  Closing"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="IBarrier_infor ≔ Iclosing " org.eventb.core.label="act1"/>
+<org.eventb.core.parameter name="*" org.eventb.core.identifier="n"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd4" org.eventb.core.predicate="RLC_states ≠ clear"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="i" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="IBarrier_Keepclosing">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="IBarrier_infor = Iclosing  "/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="IBarrier_infor ≔ IKeep_closing " org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="j" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="IBarrier_opening">
+<org.eventb.core.refinesEvent name="." org.eventb.core.target="IBarrier_opening"/>
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="IBarrier_infor = Iclosing ∨ IBarrier_infor = IKeep_closing "/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="∃n·n ∈train ∧ train_position(n) = Exit"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="IBarrier_infor ≔ Iopening" org.eventb.core.label="act3"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="grd3" org.eventb.core.predicate="∀q·q ∈ train_RLC_time[dom(train_position ⩥ {Exit})]&#13;&#10;∧ q ∉ ∅ ⇒ q  − TimetoApproaching&#13;&#10;&gt;  Time_open"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="k" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="EBarrier_Keepopening">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="EBarrier_infor = Eopening ∨ EBarrier_infor = InitiaE"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="EBarrier_infor ≔ EKeep_opening " org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="l" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="EBarrier_closing">
+<org.eventb.core.guard name="," org.eventb.core.label="grd4" org.eventb.core.predicate="n ∈ train"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="train_position(n) = Closing"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="EBarrier_infor ≔ Eclosing" org.eventb.core.label="act1"/>
+<org.eventb.core.parameter name="+" org.eventb.core.identifier="n"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd5" org.eventb.core.predicate="RLC_states = Null ∨ RLC_states = reclear"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd6" org.eventb.core.predicate="EBarrier_infor = EKeep_opening"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="m" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="EBarrier_Keepclosing">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="EBarrier_infor = Eclosing"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="EBarrier_infor ≔ EKeep_closing" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="IBarrier_infor =  IKeep_closing  ∨&#13;&#10;RLC_states = reclear ∨ RLC_states = Null"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="n" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="EBarrier_opening">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="EBarrier_infor = Eclosing ∨ EBarrier_infor =EKeep_closing"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="EBarrier_infor ≔  Eopening" org.eventb.core.label="act3"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate="(∃n· n ∈ train ∧ (train_position(n) = Closing))&#13;&#10;∨ (∃n· n ∈ train ∧ (train_position(n) = Exit))"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd3" org.eventb.core.predicate="RLC_states = Unclear ∨ (∃n· n ∈ train ∧ (train_position(n) = Exit))"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd4" org.eventb.core.predicate="(∃n· n ∈ train ∧ (train_position(n) = Exit)) &#13;&#10;⇒ (∀q·q ∈ train_RLC_time[dom(train_position ⩥ {Exit})]&#13;&#10;∧ q ∉ ∅ ⇒ q  − TimetoApproaching&#13;&#10;&gt;  Time_open) "/>
+</org.eventb.core.event>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="p" org.eventb.core.identifier="Iopening_time"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="o" org.eventb.core.identifier="Eopening_time"/>
+<org.eventb.core.invariant name="r" org.eventb.core.label="inv4" org.eventb.core.predicate="Iopening_time ∈ ℕ"/>
+<org.eventb.core.invariant name="q" org.eventb.core.label="inv3" org.eventb.core.predicate="Eopening_time ∈ ℕ "/>
+<org.eventb.core.invariant name="s" org.eventb.core.label="inv5" org.eventb.core.predicate="RLC_for_train = Brake ⇒ &#13;&#10;(∃n· n ∈ train ∧  train_position(n) = Closing&#13;&#10;∧ (train_MA(n) = Null_MA&#13;&#10;∨ RLC_states ≠ clear ∨ IBarrier_infor =  IKeep_closing))"/>
+<org.eventb.core.variable name="v" org.eventb.core.identifier="train_MA"/>
+<org.eventb.core.event name="w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_get_MA">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_get_MA"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="x" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SendNullMAMessage">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="SendNullMAMessage"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd3" org.eventb.core.predicate="train_MA(n) = Null_MA"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="y" org.eventb.core.identifier="ma_infor"/>
+<org.eventb.core.invariant name="z" org.eventb.core.label="inv7" org.eventb.core.predicate=" IBarrier_infor =  Iopening ∧  EBarrier_infor =  Eopening&#13;&#10;∧ (∃n· n ∈ train ∧ (train_position(n) = Exit))&#13;&#10;⇒&#13;&#10;(∀q·q ∈ train_RLC_time[dom(train_position ⩥ {Exit})]&#13;&#10;∧ q ∉ ∅ ⇒ q  − TimetoApproaching&#13;&#10;&gt;  Time_open) "/>
+</org.eventb.core.machineFile>

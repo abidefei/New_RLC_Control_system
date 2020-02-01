@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C1"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="Crossing_Check"/>
+<org.eventb.core.carrierSet name=")" org.eventb.core.identifier="Train_Ctrl"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.identifier="Unclear"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="+" org.eventb.core.identifier="clear"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="2" org.eventb.core.identifier="reclear"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="," org.eventb.core.identifier="Null"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="-" org.eventb.core.identifier="KeepGoing"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="." org.eventb.core.identifier="Brake"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="/" org.eventb.core.identifier="Clear_Ctrl"/>
+<org.eventb.core.axiom name="0" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(Crossing_Check,{Unclear},{clear},{reclear},{Null}) "/>
+<org.eventb.core.axiom name="1" org.eventb.core.label="axm2" org.eventb.core.predicate="partition(Train_Ctrl, {Brake}, {KeepGoing},{Clear_Ctrl})"/>
+<org.eventb.core.axiom name="3" org.eventb.core.label="axm3" org.eventb.core.predicate="partition(Train_MA, {MA}, {Null_MA})"/>
+<org.eventb.core.carrierSet name="4" org.eventb.core.identifier="Train_MA"/>
+<org.eventb.core.constant name="5" org.eventb.core.identifier="Null_MA"/>
+<org.eventb.core.constant name="6" org.eventb.core.identifier="MA"/>
+<org.eventb.core.carrierSet name="7" org.eventb.core.identifier="MAinfor"/>
+<org.eventb.core.axiom name="8" org.eventb.core.label="axm4" org.eventb.core.predicate="partition(MAinfor, {send},{receive},{no})"/>
+<org.eventb.core.constant name="9" org.eventb.core.identifier="send"/>
+<org.eventb.core.constant name=":" org.eventb.core.identifier="receive"/>
+<org.eventb.core.constant name=";" org.eventb.core.identifier="no"/>
+</org.eventb.core.contextFile>

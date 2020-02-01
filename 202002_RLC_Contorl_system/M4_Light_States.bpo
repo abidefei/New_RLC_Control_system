@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="4">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="TRACK" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.poIdentifier name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.poIdentifier name="MAXTRAINSinATrack" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Maxtracks" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TRAINNUM" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poPredicate name="MAXTRAINSinATracl" org.eventb.core.predicate="MAXTRAINSinATrack=2" org.eventb.core.source="/2019_RLC_Control_system/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="MAXTRAINSinATracm" org.eventb.core.predicate="Maxtracks=2" org.eventb.core.source="/2019_RLC_Control_system/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="MAXTRAINSinATracn" org.eventb.core.predicate="TRAINNUM=ℕ" org.eventb.core.source="/2019_RLC_Control_system/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#."/>
+<org.eventb.core.poIdentifier name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+<org.eventb.core.poIdentifier name="AN" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="DISTANCE" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="TimeofMA" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TimetoApproaching" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TimetoClosing" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TimetoExit" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="TimetoApproachinh" org.eventb.core.predicate="partition(TRAIN_POSITION,{Null_T},{AN},{Approaching},{Closing},{Exit})" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="TimetoApproachini" org.eventb.core.predicate="DISTANCE=ℤ" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="TimetoApproachinj" org.eventb.core.predicate="TimeofMA=30" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#5"/>
+<org.eventb.core.poPredicate name="TimetoApproachink" org.eventb.core.predicate="TimetoApproaching=26" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#6"/>
+<org.eventb.core.poPredicate name="TimetoApproachinl" org.eventb.core.predicate="TimetoClosing=22" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#7"/>
+<org.eventb.core.poPredicate name="TimetoApproachinm" org.eventb.core.predicate="TimetoExit=18" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#8"/>
+<org.eventb.core.poIdentifier name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.poIdentifier name="MAinfor" org.eventb.core.type="ℙ(MAinfor)"/>
+<org.eventb.core.poIdentifier name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+<org.eventb.core.poIdentifier name="Train_MA" org.eventb.core.type="ℙ(Train_MA)"/>
+<org.eventb.core.poIdentifier name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.poIdentifier name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.poIdentifier name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.poIdentifier name="MA" org.eventb.core.type="Train_MA"/>
+<org.eventb.core.poIdentifier name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="Null_MA" org.eventb.core.type="Train_MA"/>
+<org.eventb.core.poIdentifier name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="no" org.eventb.core.type="MAinfor"/>
+<org.eventb.core.poIdentifier name="receive" org.eventb.core.type="MAinfor"/>
+<org.eventb.core.poIdentifier name="reclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="send" org.eventb.core.type="MAinfor"/>
+<org.eventb.core.poPredicate name="TimetoApproachinn" org.eventb.core.predicate="partition(Crossing_Check,{Unclear},{clear},{reclear},{Null})" org.eventb.core.source="/2019_RLC_Control_system/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#0"/>
+<org.eventb.core.poPredicate name="TimetoApproachino" org.eventb.core.predicate="partition(Train_Ctrl,{Brake},{KeepGoing},{Clear_Ctrl})" org.eventb.core.source="/2019_RLC_Control_system/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#1"/>
+<org.eventb.core.poPredicate name="TimetoApproachinp" org.eventb.core.predicate="partition(Train_MA,{MA},{Null_MA})" org.eventb.core.source="/2019_RLC_Control_system/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#3"/>
+<org.eventb.core.poPredicate name="TimetoApproachinq" org.eventb.core.predicate="partition(MAinfor,{send},{receive},{no})" org.eventb.core.source="/2019_RLC_Control_system/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#8"/>
+<org.eventb.core.poIdentifier name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.poIdentifier name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.poIdentifier name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.poIdentifier name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.poIdentifier name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.poIdentifier name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.poIdentifier name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.poIdentifier name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.poIdentifier name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.poIdentifier name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.poIdentifier name="Iopening" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.poIdentifier name="Time_EBarrier_keep_opening" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Time_IBarrier_keep_opening" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Time_open" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="Time_IBarrier_keep_openinh" org.eventb.core.predicate="partition(EBarrier_States,{InitiaE},{Eclosing},{EKeep_closing},{Eopening},{EKeep_opening})" org.eventb.core.source="/2019_RLC_Control_system/C3.buc|org.eventb.core.contextFile#C3|org.eventb.core.axiom#6"/>
+<org.eventb.core.poPredicate name="Time_IBarrier_keep_openini" org.eventb.core.predicate="partition(IBarrier_States,{InitiaI},{Iclosing},{IKeep_closing},{Iopening})" org.eventb.core.source="/2019_RLC_Control_system/C3.buc|org.eventb.core.contextFile#C3|org.eventb.core.axiom#7"/>
+<org.eventb.core.poPredicate name="Time_IBarrier_keep_openinj" org.eventb.core.predicate="Time_EBarrier_keep_opening=90" org.eventb.core.source="/2019_RLC_Control_system/C3.buc|org.eventb.core.contextFile#C3|org.eventb.core.axiom#8"/>
+<org.eventb.core.poPredicate name="Time_IBarrier_keep_openink" org.eventb.core.predicate="Time_IBarrier_keep_opening=90" org.eventb.core.source="/2019_RLC_Control_system/C3.buc|org.eventb.core.contextFile#C3|org.eventb.core.axiom#="/>
+<org.eventb.core.poPredicate name="Time_IBarrier_keep_openinl" org.eventb.core.predicate="Time_open=2" org.eventb.core.source="/2019_RLC_Control_system/C3.buc|org.eventb.core.contextFile#C3|org.eventb.core.axiom#?"/>
+<org.eventb.core.poIdentifier name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.poIdentifier name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.poIdentifier name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.poIdentifier name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.poIdentifier name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.poIdentifier name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.poIdentifier name="Red_Flash" org.eventb.core.type="Light_State"/>
+<org.eventb.core.poIdentifier name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.poIdentifier name="Turn_Red" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.poIdentifier name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.poPredicate name="Time_IBarrier_keep_openinm" org.eventb.core.predicate="partition(Light_State,{Light_Initia},{Red},{Green},{Red_Flash})" org.eventb.core.source="/2019_RLC_Control_system/C4.buc|org.eventb.core.contextFile#C4|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="Time_IBarrier_keep_openinn" org.eventb.core.predicate="partition(Light_Order,{Turn_Green},{Turn_Red},{Turn_RedFlash},{Null_S})" org.eventb.core.source="/2019_RLC_Control_system/C4.buc|org.eventb.core.contextFile#C4|org.eventb.core.axiom#3"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="Closing_flag" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="EBarrier_infor" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.poIdentifier name="Eopening_time" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Exit_flag" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="IBarrier_infor" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.poIdentifier name="Iopening_time" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Light_Ctrl" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.poIdentifier name="Light_Information" org.eventb.core.type="Light_State"/>
+<org.eventb.core.poIdentifier name="RLC_for_train" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.poIdentifier name="RLC_states" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="Speedupdate_flag" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Time" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="amountoftrains" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="ma_infor" org.eventb.core.type="MAinfor"/>
+<org.eventb.core.poIdentifier name="sumtracks" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="track" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.poIdentifier name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.poIdentifier name="train_MA" org.eventb.core.type="ℙ(TRAIN×Train_MA)"/>
+<org.eventb.core.poIdentifier name="train_RLC_time" org.eventb.core.type="ℙ(TRAIN×ℤ)"/>
+<org.eventb.core.poIdentifier name="train_position" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.poIdentifier name="trainintrack" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.poPredicate name="Light_Informatioo" org.eventb.core.predicate="track⊆TRACK" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.invariant#-"/>
+<org.eventb.core.poPredicate name="Light_Informatiop" org.eventb.core.predicate="train⊆TRAIN" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.invariant#."/>
+<org.eventb.core.poPredicate name="Light_Informatioq" org.eventb.core.predicate="sumtracks∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.invariant#\/"/>
+<org.eventb.core.poPredicate name="Light_Informatior" org.eventb.core.predicate="trainintrack∈track → TRAINNUM" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.invariant#0"/>
+<org.eventb.core.poPredicate name="Light_Informatios" org.eventb.core.predicate="train_position∈train → TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poPredicate name="Light_Informatiot" org.eventb.core.predicate="train_RLC_time∈train → DISTANCE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#8"/>
+<org.eventb.core.poPredicate name="Light_Informatiou" org.eventb.core.predicate="Time∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#9"/>
+<org.eventb.core.poPredicate name="Light_Informatiov" org.eventb.core.predicate="Speedupdate_flag∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#:"/>
+<org.eventb.core.poPredicate name="Light_Informatiow" org.eventb.core.predicate="amountoftrains∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#;"/>
+<org.eventb.core.poPredicate name="Light_Informatiox" org.eventb.core.predicate="Exit_flag∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#B"/>
+<org.eventb.core.poPredicate name="Light_Informatioy" org.eventb.core.predicate="Closing_flag∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#C"/>
+<org.eventb.core.poPredicate name="Light_Informatioz" org.eventb.core.predicate="RLC_states∈Crossing_Check" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.invariant#N"/>
+<org.eventb.core.poPredicate name="Light_Informatio{" org.eventb.core.predicate="RLC_for_train∈Train_Ctrl" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.invariant#O"/>
+<org.eventb.core.poPredicate name="Light_Informatio|" org.eventb.core.predicate="train_MA∈train → Train_MA" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.invariant#Z"/>
+<org.eventb.core.poPredicate name="Light_Informatio}" org.eventb.core.predicate="ma_infor∈MAinfor" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.invariant#_"/>
+<org.eventb.core.poPredicate name="Light_Informatio~" org.eventb.core.predicate="EBarrier_infor∈EBarrier_States" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.invariant#f"/>
+<org.eventb.core.poPredicate name="Light_Informatip'" org.eventb.core.predicate="IBarrier_infor∈IBarrier_States" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.invariant#g"/>
+<org.eventb.core.poPredicate name="Light_Informatip(" org.eventb.core.predicate="Iopening_time∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.invariant#r"/>
+<org.eventb.core.poPredicate name="Light_Informatip)" org.eventb.core.predicate="Eopening_time∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.invariant#q"/>
+<org.eventb.core.poPredicate name="Light_Informatip*" org.eventb.core.predicate="RLC_for_train=Brake⇒(∃n⦂TRAIN·n∈train∧train_position(n)=Closing∧(train_MA(n)=Null_MA∨RLC_states≠clear∨IBarrier_infor=IKeep_closing))" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.invariant#s"/>
+<org.eventb.core.poPredicate name="Light_Informatip+" org.eventb.core.predicate="IBarrier_infor=Iopening∧EBarrier_infor=Eopening∧(∃n⦂TRAIN·n∈train∧train_position(n)=Exit)⇒(∀q⦂ℤ·q∈train_RLC_time[dom(train_position ⩥ {Exit})]∧q∉(∅ ⦂ ℙ(ℤ))⇒q − TimetoApproaching&gt;Time_open)" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.invariant#z"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatioo" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="Exit_flag'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="EBarrier_infor'" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.poIdentifier name="train_RLC_time'" org.eventb.core.type="ℙ(TRAIN×ℤ)"/>
+<org.eventb.core.poIdentifier name="Iopening_time'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="RLC_states'" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="IBarrier_infor'" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.poIdentifier name="Speedupdate_flag'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Light_Ctrl'" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.poIdentifier name="Eopening_time'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="amountoftrains'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Time'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="train_position'" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.poIdentifier name="trainintrack'" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.poIdentifier name="train'" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.poIdentifier name="ma_infor'" org.eventb.core.type="MAinfor"/>
+<org.eventb.core.poIdentifier name="RLC_for_train'" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.poIdentifier name="sumtracks'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="train_MA'" org.eventb.core.type="ℙ(TRAIN×Train_MA)"/>
+<org.eventb.core.poIdentifier name="Closing_flag'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="track'" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.poIdentifier name="Light_Information'" org.eventb.core.type="Light_State"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatioo" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatioo" org.eventb.core.poStamp="2"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatiop" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="trainintrack'" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.poIdentifier name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.poIdentifier name="sumtracks'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="track'" org.eventb.core.type="ℙ(TRACK)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatiop" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatiop" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="k∉track" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#1|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="sumtracks&lt;Maxtracks" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#1|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatioq" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="trainintrack'" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.poIdentifier name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.poIdentifier name="sumtracks'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="track'" org.eventb.core.type="ℙ(TRACK)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatioq" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatioq" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="k∈track" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#2|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="sumtracks&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#2|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="trainintrack(k)=0" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#2|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatior" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="train_RLC_time'" org.eventb.core.type="ℙ(TRAIN×ℤ)"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="amountoftrains'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="train_position'" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.poIdentifier name="trainintrack'" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.poIdentifier name="train'" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.poIdentifier name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.poIdentifier name="train_MA'" org.eventb.core.type="ℙ(TRAIN×Train_MA)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatior" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatior" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∉train" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#3|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="k∈track" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#3|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="trainintrack(k)&lt;MAXTRAINSinATrack" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#3|org.eventb.core.guard#+"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="sumtracks&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#0|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatios" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="train_RLC_time'" org.eventb.core.type="ℙ(TRAIN×ℤ)"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="amountoftrains'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="train_position'" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.poIdentifier name="trainintrack'" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.poIdentifier name="train'" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.poIdentifier name="ma_infor'" org.eventb.core.type="MAinfor"/>
+<org.eventb.core.poIdentifier name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.poIdentifier name="train_MA'" org.eventb.core.type="ℙ(TRAIN×Train_MA)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatios" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatios" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#4|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="k∈track" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#4|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="trainintrack(k)&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#4|org.eventb.core.guard#+"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="sumtracks&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#1|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="train_position(n)=Exit" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#1|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="amountoftrains&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#1|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatiot" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="train_RLC_time'" org.eventb.core.type="ℙ(TRAIN×ℤ)"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="Speedupdate_flag'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatiot" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatiot" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train_RLC_time(n)&gt;1" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Speedupdate_flag=Time∧Time&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="amountoftrains&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.guard#+"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="ran(train_RLC_time)≠(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.guard#,"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="train≠(∅ ⦂ ℙ(TRAIN))⇒(∀k⦂TRAIN·k∈train⇒train_RLC_time(k)&gt;18)" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#Z|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="IBarrier_infor=Iopening⇒(∀q⦂ℤ·q∈train_RLC_time[dom(train_position ⩥ {Exit})]∧q∉(∅ ⦂ ℙ(ℤ))⇒q − TimetoApproaching&gt;Time_open+1)∨EBarrier_infor=EKeep_opening∨EBarrier_infor=EKeep_closing" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#Z|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="(∃k⦂TRAIN·k∈train∧train_position(k)=Closing)⇒RLC_for_train=KeepGoing∧(∃k⦂TRAIN·k∈train∧train_MA(k)=MA)∧RLC_states=clear" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#Z|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatiou" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="train_position'" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatiou" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatiou" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#&gt;|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train_position(n)=AN" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#&gt;|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="train_RLC_time(n)≤TimetoApproaching" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#&gt;|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="IBarrier_infor=InitiaI∨IBarrier_infor=Iopening∨IBarrier_infor=IKeep_closing" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#[|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="EBarrier_infor=InitiaE∨EBarrier_infor=EKeep_opening∨EBarrier_infor=EKeep_closing" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#[|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatiov" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="train_position'" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.poIdentifier name="Closing_flag'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatiov" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatiov" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#?|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train_position(n)=Approaching" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#?|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="train_RLC_time(n)≤TimetoClosing" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#?|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatiow" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="Exit_flag'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="train_position'" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatiow" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatiow" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#D|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train_position(n)=Closing" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#D|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="train_RLC_time(n)≤TimetoExit" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#D|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="RLC_states=clear∨RLC_states=reclear" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#J|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="RLC_for_train=KeepGoing" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#J|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="IBarrier_infor=Iopening⇒(∀q⦂ℤ·q∈train_RLC_time[dom(train_position ⩥ {Exit})]∧q∉(∅ ⦂ ℙ(ℤ))⇒q − TimetoApproaching&gt;Time_open)" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#]|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatiox" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="Speedupdate_flag'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Time'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatiox" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatiox" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Speedupdate_flag=0∨Speedupdate_flag&gt;Time" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#E|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatioy" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="RLC_states'" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="RLC_for_train'" org.eventb.core.type="Train_Ctrl"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatioy" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatioy" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="∃n⦂TRAIN·n∈train∧train_position(n)=Closing" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#Q|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="RLC_states≠clear∨EBarrier_infor≠EKeep_closing" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#_|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatioz" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="RLC_states'" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="RLC_for_train'" org.eventb.core.type="Train_Ctrl"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatioz" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatioz" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="∃n⦂TRAIN·n∈train∧train_position(n)=Closing∧train_MA(n)=MA" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#R|org.eventb.core.guard#,"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="RLC_states≠Unclear∧EBarrier_infor=EKeep_closing" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#`|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="IBarrier_infor=IKeep_closing" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#`|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="RLC_for_train≠Brake" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#`|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatio{" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="RLC_states'" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="RLC_for_train'" org.eventb.core.type="Train_Ctrl"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatio{" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatio{" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="RLC_states=Unclear" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#W|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="n∈train∧train_position(n)=Closing" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#W|org.eventb.core.guard#+"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="RLC_for_train=Brake" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#W|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="EBarrier_infor=EKeep_opening" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#a|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatio|" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="IBarrier_infor'" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatio|" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatio\|" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="IBarrier_infor=Iopening∨IBarrier_infor=InitiaI" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#h|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#h|org.eventb.core.guard#+"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="train_position(n)=Approaching∨train_position(n)=Closing" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#h|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="RLC_states≠clear" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#h|org.eventb.core.guard#,"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatio}" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="IBarrier_infor'" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatio}" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatio}" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="IBarrier_infor=Iclosing" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#i|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatio~" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="RLC_states'" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.poIdentifier name="IBarrier_infor'" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.poIdentifier name="RLC_for_train'" org.eventb.core.type="Train_Ctrl"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatio~" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatio~" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="IBarrier_infor=Iclosing∨IBarrier_infor=IKeep_closing" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#j|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="∃n⦂TRAIN·n∈train∧train_position(n)=Exit" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#j|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀q⦂ℤ·q∈train_RLC_time[dom(train_position ⩥ {Exit})]∧q∉(∅ ⦂ ℙ(ℤ))⇒q − TimetoApproaching&gt;Time_open" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#j|org.eventb.core.guard#\/"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatip'" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="EBarrier_infor'" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatip'" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip'" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="EBarrier_infor=Eopening∨EBarrier_infor=InitiaE" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#k|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatip(" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="EBarrier_infor'" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatip(" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip(" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#l|org.eventb.core.guard#,"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train_position(n)=Closing" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#l|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="RLC_states=Null∨RLC_states=reclear" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#l|org.eventb.core.guard#-"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="EBarrier_infor=EKeep_opening" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#l|org.eventb.core.guard#."/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatip)" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="EBarrier_infor'" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatip)" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip)" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="EBarrier_infor=Eclosing" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#m|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="IBarrier_infor=IKeep_closing∨RLC_states=reclear∨RLC_states=Null" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#m|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatip*" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="EBarrier_infor'" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatip*" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip*" org.eventb.core.poStamp="4">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="EBarrier_infor=Eclosing∨EBarrier_infor=EKeep_closing" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#n|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="(∃n⦂TRAIN·n∈train∧train_position(n)=Closing)∨(∃n⦂TRAIN·n∈train∧train_position(n)=Exit)" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#n|org.eventb.core.guard#,"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="RLC_states=Unclear∨(∃n⦂TRAIN·n∈train∧train_position(n)=Exit)" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#n|org.eventb.core.guard#-"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="(∃n⦂TRAIN·n∈train∧train_position(n)=Exit)⇒(∀q⦂ℤ·q∈train_RLC_time[dom(train_position ⩥ {Exit})]∧q∉(∅ ⦂ ℙ(ℤ))⇒q − TimetoApproaching&gt;Time_open)" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#n|org.eventb.core.guard#."/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Light_TurnRed/grd1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip+"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="train_position∼[{Exit}]=(∅ ⦂ ℙ(TRAIN))⇒(∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION)" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'1|org.eventb.core.guard#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'1|org.eventb.core.guard#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip+"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Light_TurnRed/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTHYPLight_Informatip+("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Light_Ctrl=Turn_RedFlash⇒(∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION)" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'1|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'1|org.eventb.core.guard#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTHYPLight_Informatip+("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatip+" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="Light_Ctrl'" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPLight_Informatip+(" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip+" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="train_position∼[{Exit}]=(∅ ⦂ ℙ(TRAIN))⇒(∃n⦂TRAIN·n∈train∧train_position(n)=Approaching)" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'1|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Light_Ctrl≠Turn_Red" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'1|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatip+" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTHYPLight_Informatip+(" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Light_Ctrl=Turn_RedFlash⇒(∃n⦂TRAIN·n∈train∧train_position(n)=Exit)" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'1|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatip," org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="Light_Information'" org.eventb.core.type="Light_State"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatip," org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip," org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Light_Ctrl=Turn_Red" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'2|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Light_Information≠Red" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'2|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Light_TurnRedFlash/grd1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip-"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'3|org.eventb.core.guard#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'3|org.eventb.core.guard#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip-"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatip-" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="Light_Ctrl'" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatip-" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip-" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="∃n⦂TRAIN·n∈train∧train_position(n)=Closing" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'3|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Light_Ctrl≠Turn_RedFlash" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'3|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatip." org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="Light_Information'" org.eventb.core.type="Light_State"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatip." org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip." org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Light_Ctrl=Turn_RedFlash" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'4|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Light_Information≠Red_Flash" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'4|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Light_TurnGreen/grd1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip\/"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'5|org.eventb.core.guard#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'5|org.eventb.core.guard#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip\/"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatip/" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="Light_Ctrl'" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatip/" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip\/" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="∃n⦂TRAIN·n∈train∧train_position(n)=Exit" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'5|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="IBarrier_infor=Iopening∧EBarrier_infor=Eopening" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'5|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Light_Ctrl≠Turn_Green" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'5|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatip0" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="Light_Information'" org.eventb.core.type="Light_State"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatip0" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip0" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Light_Ctrl=Turn_Green" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'6|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Light_Information≠Green" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.event#'6|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatip1" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="ma_infor'" org.eventb.core.type="MAinfor"/>
+<org.eventb.core.poIdentifier name="RLC_for_train'" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.poIdentifier name="train_MA'" org.eventb.core.type="ℙ(TRAIN×Train_MA)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatip1" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip1" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#\\|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train_MA(n)=Null_MA" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#\\|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="train_position(n)=Approaching∨train_position(n)=Closing" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#\\|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="train_position(n)=Closing⇒RLC_for_train=Brake∧ma_infor=send" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#\\|org.eventb.core.guard#,"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="RLC_states=clear∨RLC_for_train=Clear_Ctrl∨RLC_for_train=Brake∨RLC_for_train=KeepGoing" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#\\|org.eventb.core.guard#."/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTLight_Informatip2" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="ma_infor'" org.eventb.core.type="MAinfor"/>
+<org.eventb.core.poIdentifier name="RLC_for_train'" org.eventb.core.type="Train_Ctrl"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPLight_Informatip2" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#EVTIDENTLight_Informatip2" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#]|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train_position(n)=Closing" org.eventb.core.source="/2019_RLC_Control_system/M2_Clearing_check.bum|org.eventb.core.machineFile#M2_Clearing_check|org.eventb.core.event#]|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="train_MA(n)=Null_MA" org.eventb.core.source="/2019_RLC_Control_system/M3_Barrier_States.bum|org.eventb.core.machineFile#M3_Barrier_States|org.eventb.core.event#x|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M4_Light_States.bpo|org.eventb.core.poFile#M4_Light_States|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Light_Ctrl∈Light_Order" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.invariant#'\/"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Light_Information∈Light_State" org.eventb.core.source="/2019_RLC_Control_system/M4_Light_States.bum|org.eventb.core.machineFile#M4_Light_States|org.eventb.core.invariant#'0"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

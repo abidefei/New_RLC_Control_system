@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M3_Barrier_States"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="C4"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=")" org.eventb.core.identifier="track"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.identifier="train"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="+" org.eventb.core.identifier="sumtracks"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="," org.eventb.core.identifier="trainintrack"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="2" org.eventb.core.identifier="train_position"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="4" org.eventb.core.identifier="train_RLC_time"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="5" org.eventb.core.identifier="Time"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="6" org.eventb.core.identifier="Speedupdate_flag"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="7" org.eventb.core.identifier="amountoftrains"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="@" org.eventb.core.identifier="Exit_flag"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="A" org.eventb.core.identifier="Closing_flag"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="L" org.eventb.core.identifier="RLC_states"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="M" org.eventb.core.identifier="RLC_for_train"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="b" org.eventb.core.identifier="EBarrier_infor"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="d" org.eventb.core.identifier="IBarrier_infor"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="p" org.eventb.core.identifier="Iopening_time"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="o" org.eventb.core.identifier="Eopening_time"/>
+<org.eventb.core.event name="q" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="Light_Ctrl ≔ Null_S" org.eventb.core.label="act30"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="Light_Information ≔ Light_Initia" org.eventb.core.label="act21"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="r" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Add_track">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Add_track"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="s" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Remove_track">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Remove_track"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="t" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Add_train">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Add_train"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="u" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Delete_train">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Delete_train"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="v" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Distance_update">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Distance_update"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Train_to_Approaching">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Train_to_Approaching"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="x" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Train_to_Closing">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Train_to_Closing"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="y" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Train_to_Exit">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Train_to_Exit"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="z" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Tick_Tock">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="Tick_Tock"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="{" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SendUnclearMessage">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="SendUnclearMessage"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="|" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SendclearMessage">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="SendclearMessage"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="}" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SendreclearMessage">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="SendreclearMessage"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="~" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="IBarrier_closing">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="IBarrier_closing"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="''" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="IBarrier_Keepclosing">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="IBarrier_Keepclosing"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="'(" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="IBarrier_opening">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="IBarrier_opening"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="')" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="EBarrier_Keepopening">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="EBarrier_Keepopening"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="'*" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="EBarrier_closing">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="EBarrier_closing"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="'+" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="EBarrier_Keepclosing">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="EBarrier_Keepclosing"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="'," org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="EBarrier_opening">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="EBarrier_opening"/>
+</org.eventb.core.event>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="'-" org.eventb.core.identifier="Light_Ctrl"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="'." org.eventb.core.identifier="Light_Information"/>
+<org.eventb.core.invariant name="'/" org.eventb.core.label="inv1" org.eventb.core.predicate="Light_Ctrl ∈ Light_Order"/>
+<org.eventb.core.invariant name="'0" org.eventb.core.label="inv2" org.eventb.core.predicate="Light_Information ∈ Light_State "/>
+<org.eventb.core.event name="'1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Light_TurnRed">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="train_position∼[{Exit}] = ∅ ⇒ (∃n· n ∈ train ∧  (train_position(n) = Approaching))"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Light_Ctrl ≠ Turn_Red"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="Light_Ctrl = Turn_RedFlash ⇒    &#13;&#10;(∃n· n ∈ train ∧ (train_position(n) = Exit))"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Light_Ctrl ≔ Turn_Red" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="'2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Light_Red">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Light_Ctrl = Turn_Red"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Light_Information ≠ Red"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Light_Information ≔ Red" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="'3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Light_TurnRedFlash">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="∃n· n ∈ train ∧ (train_position(n) = Closing)"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Light_Ctrl ≠ Turn_RedFlash"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Light_Ctrl ≔ Turn_RedFlash" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="'4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Light_RedFlash">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Light_Ctrl = Turn_RedFlash"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Light_Information ≠ Red_Flash"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Light_Information ≔ Red_Flash" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="'5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Light_TurnGreen">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="∃n· n ∈ train ∧ (train_position(n) = Exit)"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="IBarrier_infor = Iopening ∧ EBarrier_infor = Eopening "/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Light_Ctrl ≠ Turn_Green"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Light_Ctrl ≔ Turn_Green" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="'6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Light_Green">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Light_Ctrl = Turn_Green"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Light_Information ≠ Green"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Light_Information ≔ Green" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="'7" org.eventb.core.identifier="train_MA"/>
+<org.eventb.core.event name="'8" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_get_MA">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_get_MA"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="'9" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SendNullMAMessage">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="SendNullMAMessage"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="':" org.eventb.core.identifier="ma_infor"/>
+</org.eventb.core.machineFile>

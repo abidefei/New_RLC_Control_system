@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="TRACK" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.poIdentifier name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.poIdentifier name="MAXTRAINSinATrack" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Maxtracks" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TRAINNUM" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poPredicate name="MAXTRAINSinATracl" org.eventb.core.predicate="MAXTRAINSinATrack=2" org.eventb.core.source="/2019_RLC_Control_system/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="MAXTRAINSinATracm" org.eventb.core.predicate="Maxtracks=2" org.eventb.core.source="/2019_RLC_Control_system/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="MAXTRAINSinATracn" org.eventb.core.predicate="TRAINNUM=ℕ" org.eventb.core.source="/2019_RLC_Control_system/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#."/>
+<org.eventb.core.poIdentifier name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+<org.eventb.core.poIdentifier name="AN" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="DISTANCE" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.poIdentifier name="TimeofMA" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TimetoApproaching" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TimetoClosing" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TimetoExit" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="TimetoApproachinh" org.eventb.core.predicate="partition(TRAIN_POSITION,{Null_T},{AN},{Approaching},{Closing},{Exit})" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="TimetoApproachini" org.eventb.core.predicate="DISTANCE=ℤ" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="TimetoApproachinj" org.eventb.core.predicate="TimeofMA=30" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#5"/>
+<org.eventb.core.poPredicate name="TimetoApproachink" org.eventb.core.predicate="TimetoApproaching=26" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#6"/>
+<org.eventb.core.poPredicate name="TimetoApproachinl" org.eventb.core.predicate="TimetoClosing=22" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#7"/>
+<org.eventb.core.poPredicate name="TimetoApproachinm" org.eventb.core.predicate="TimetoExit=18" org.eventb.core.source="/2019_RLC_Control_system/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#8"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="Closing_flag" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Exit_flag" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Speedupdate_flag" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Time" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="amountoftrains" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="sumtracks" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="track" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.poIdentifier name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.poIdentifier name="train_RLC_time" org.eventb.core.type="ℙ(TRAIN×ℤ)"/>
+<org.eventb.core.poIdentifier name="train_position" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.poIdentifier name="trainintrack" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.poPredicate name="Speedupdate_flah" org.eventb.core.predicate="track⊆TRACK" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.invariant#-"/>
+<org.eventb.core.poPredicate name="Speedupdate_flai" org.eventb.core.predicate="train⊆TRAIN" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.invariant#."/>
+<org.eventb.core.poPredicate name="Speedupdate_flaj" org.eventb.core.predicate="sumtracks∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.invariant#\/"/>
+<org.eventb.core.poPredicate name="Speedupdate_flak" org.eventb.core.predicate="trainintrack∈track → TRAINNUM" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.invariant#0"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flah"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(TRAIN×TRAIN_POSITION))∈(∅ ⦂ ℙ(TRAIN)) → TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#-"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flah"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(TRAIN×ℤ))∈(∅ ⦂ ℙ(TRAIN)) → DISTANCE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#-"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flah"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#-"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flah"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#-"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flah"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#-"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flah"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#-"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flah"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#C"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#-"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#C"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTSpeedupdate_flah" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="Exit_flag'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="train_RLC_time'" org.eventb.core.type="ℙ(TRAIN×ℤ)"/>
+<org.eventb.core.poIdentifier name="Speedupdate_flag'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="amountoftrains'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Time'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="train_position'" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.poIdentifier name="trainintrack'" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.poIdentifier name="train'" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.poIdentifier name="sumtracks'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Closing_flag'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="track'" org.eventb.core.type="ℙ(TRACK)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPSpeedupdate_flah" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTIDENTSpeedupdate_flah" org.eventb.core.poStamp="2"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTSpeedupdate_flai" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="trainintrack'" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.poIdentifier name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.poIdentifier name="sumtracks'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="track'" org.eventb.core.type="ℙ(TRACK)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPSpeedupdate_flai" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTIDENTSpeedupdate_flai" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="k∉track" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#1|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="sumtracks&lt;Maxtracks" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#1|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTSpeedupdate_flaj" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="trainintrack'" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.poIdentifier name="k" org.eventb.core.type="TRACK"/>
+<org.eventb.core.poIdentifier name="sumtracks'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="track'" org.eventb.core.type="ℙ(TRACK)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPSpeedupdate_flaj" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTIDENTSpeedupdate_flaj" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="k∈track" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#2|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="sumtracks&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#2|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="trainintrack(k)=0" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#2|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Add_train/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flak"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="train_position{n ↦ AN}∈train∪{n} → TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#0"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Add_train\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Add_train/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flak"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="train_RLC_time{n ↦ TimeofMA}∈train∪{n} → DISTANCE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#0"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Add_train\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Add_train/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flak"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="amountoftrains+1∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#0"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Add_train\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTSpeedupdate_flak" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="train_RLC_time'" org.eventb.core.type="ℙ(TRAIN×ℤ)"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="amountoftrains'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="train_position'" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.poIdentifier name="trainintrack'" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.poIdentifier name="train'" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.poIdentifier name="k" org.eventb.core.type="TRACK"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPSpeedupdate_flak" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTIDENTSpeedupdate_flak" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∉train" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#3|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="k∈track" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#3|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="trainintrack(k)&lt;MAXTRAINSinATrack" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#3|org.eventb.core.guard#+"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="sumtracks&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#0|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Delete_train/grd5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flalq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#1|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#1|org.eventb.core.guard#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flalq"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Delete_train/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flal"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{n} ⩤ train_position∈train ∖ {n} → TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#1"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Delete_train\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Delete_train/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flal"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{n} ⩤ train_RLC_time∈train ∖ {n} → DISTANCE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#1"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Delete_train\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Delete_train/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flal"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="amountoftrains − 1∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#1"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Delete_train\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTSpeedupdate_flal" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="train_RLC_time'" org.eventb.core.type="ℙ(TRAIN×ℤ)"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="amountoftrains'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="train_position'" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.poIdentifier name="trainintrack'" org.eventb.core.type="ℙ(TRACK×ℤ)"/>
+<org.eventb.core.poIdentifier name="train'" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.poIdentifier name="k" org.eventb.core.type="TRACK"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPSpeedupdate_flalq" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTIDENTSpeedupdate_flal" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#4|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="k∈track" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#4|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="trainintrack(k)&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M0_TRACK_TRAIN.bum|org.eventb.core.machineFile#M0_TRACK_TRAIN|org.eventb.core.event#4|org.eventb.core.guard#+"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="sumtracks&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#1|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPSpeedupdate_flal" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flalq" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="train_position(n)=Exit" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#1|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="amountoftrains&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#1|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Distance_update/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flam'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∈dom(train_RLC_time)∧train_RLC_time∈TRAIN ⇸ ℤ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.guard#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flam'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Distance_update/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flam"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(λq⦂TRAIN·q∈dom(train_RLC_time) ∣ train_RLC_time(q) − 1)∈train → DISTANCE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Distance_update\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Distance_update/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flam"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Speedupdate_flag+1∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Distance_update\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Distance_update/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flam"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀q⦂TRAIN·q∈dom(train_RLC_time)⇒train_RLC_time∈TRAIN ⇸ ℤ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.action#-"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.action#-"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flam"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTSpeedupdate_flam" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="train_RLC_time'" org.eventb.core.type="ℙ(TRAIN×ℤ)"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="Speedupdate_flag'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPSpeedupdate_flam'" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTIDENTSpeedupdate_flam" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPSpeedupdate_flam" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flam'" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train_RLC_time(n)&gt;1" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Speedupdate_flag=Time∧Time&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="amountoftrains&gt;0" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.guard#+"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="ran(train_RLC_time)≠(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#=|org.eventb.core.guard#,"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Train_to_Approaching/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flan'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#&gt;|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#&gt;|org.eventb.core.guard#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flan'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Train_to_Approaching/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flan("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∈dom(train_RLC_time)∧train_RLC_time∈TRAIN ⇸ ℤ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#&gt;|org.eventb.core.guard#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#&gt;|org.eventb.core.guard#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flan("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Train_to_Approaching/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flan"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="train_position{n ↦ Approaching}∈train → TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#&gt;"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Train_to_Approaching\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTSpeedupdate_flan" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="train_position'" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPSpeedupdate_flan'" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTIDENTSpeedupdate_flan" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#&gt;|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPSpeedupdate_flan(" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flan'" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train_position(n)=AN" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#&gt;|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPSpeedupdate_flan" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flan(" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="train_RLC_time(n)≤TimetoApproaching" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#&gt;|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Train_to_Closing/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flao'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#?|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#?|org.eventb.core.guard#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flao'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Train_to_Closing/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flao("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∈dom(train_RLC_time)∧train_RLC_time∈TRAIN ⇸ ℤ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#?|org.eventb.core.guard#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#?|org.eventb.core.guard#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flao("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Train_to_Closing/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flao"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="train_position{n ↦ Closing}∈train → TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#?"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Train_to_Closing\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Train_to_Closing/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flao"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#C"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#?"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#C"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Train_to_Closing\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTSpeedupdate_flao" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="train_position'" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.poIdentifier name="Closing_flag'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPSpeedupdate_flao'" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTIDENTSpeedupdate_flao" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#?|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPSpeedupdate_flao(" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flao'" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train_position(n)=Approaching" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#?|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPSpeedupdate_flao" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flao(" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="train_RLC_time(n)≤TimetoClosing" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#?|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Train_to_Exit/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flap'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#D|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#D|org.eventb.core.guard#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flap'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Train_to_Exit/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flap("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∈dom(train_RLC_time)∧train_RLC_time∈TRAIN ⇸ ℤ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#D|org.eventb.core.guard#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#D|org.eventb.core.guard#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flap("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Train_to_Exit/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flap"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="train_position{n ↦ Exit}∈train → TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#D"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Train_to_Exit\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Train_to_Exit/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flap"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#D"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Train_to_Exit\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTSpeedupdate_flap" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="Exit_flag'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="train_position'" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPSpeedupdate_flap'" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTIDENTSpeedupdate_flap" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈train" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#D|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPSpeedupdate_flap(" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flap'" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train_position(n)=Closing" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#D|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPSpeedupdate_flap" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTHYPSpeedupdate_flap(" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="train_RLC_time(n)≤TimetoExit" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#D|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Tick_Tock/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flaq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Time+1∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#E"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Tick_Tock\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Tick_Tock/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTALLHYPSpeedupdate_flaq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Time+1∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#E"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poSequent#Tick_Tock\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTSpeedupdate_flaq" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="Speedupdate_flag'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Time'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPSpeedupdate_flaq" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#EVTIDENTSpeedupdate_flaq" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Speedupdate_flag=0∨Speedupdate_flag&gt;Time" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.event#E|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/2019_RLC_Control_system/M1_Position_Update.bpo|org.eventb.core.poFile#M1_Position_Update|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="train_position∈train → TRAIN_POSITION" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#3"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train_RLC_time∈train → DISTANCE" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#8"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Time∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#9"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="Speedupdate_flag∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#:"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="amountoftrains∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#;"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="Exit_flag∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#B"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="Closing_flag∈ℕ" org.eventb.core.source="/2019_RLC_Control_system/M1_Position_Update.bum|org.eventb.core.machineFile#M1_Position_Update|org.eventb.core.invariant#C"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

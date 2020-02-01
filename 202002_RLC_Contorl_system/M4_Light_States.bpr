@@ -1,0 +1,2379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="Light_TurnRedFlash/grd1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="n" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="TRAIN,TRAIN_POSITION">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRAIN_POSITION,{Null_T},{MA},{Approaching},{Closing},{Exit}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Crossing_Check,{Unclear},{clear},{reclear},{Null}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15,p16,p17,p18,p19,p20,p21"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p15,p16,p17,p18,p19,p20,p21"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Train_Ctrl,{Brake},{KeepGoing},{Clear_Ctrl}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23,p24,p25,p26"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p23,p24,p25,p26"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(EBarrier_States,{InitiaE},{Eclosing},{EKeep_closing},{Eopening},{EKeep_opening}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(IBarrier_States,{InitiaI},{Iclosing},{IKeep_closing},{Iopening}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p40,p41,p42,p43,p44,p45,p46"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p40,p41,p42,p43,p44,p45,p46"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Light_State,{Light_Initia},{Red},{Green},{Red_Flash}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p47" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48,p49,p50,p51,p52,p53,p54"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p48,p49,p50,p51,p52,p53,p54"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Light_Order,{Turn_Green},{Turn_Red},{Turn_RedFlash},{Null_S}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p55" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56,p57,p58,p59,p60,p61,p62"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p56,p57,p58,p59,p60,p61,p62"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p63"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p64"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p65"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p66"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p67"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p68"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p69"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p70"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees n)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p71">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p71" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p73" org.eventb.core.prHyps="p72">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p73" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p74">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p74" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p72">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p72" org.eventb.core.prHyps="p72"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p75">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p75" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train_position" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="¬Iclosing=IKeep_closing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="Train_Ctrl={Brake,KeepGoing,Clear_Ctrl}">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="¬EKeep_closing=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="¬Turn_Green=Null_S">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="¬InitiaI=IKeep_closing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬MA=Approaching">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬InitiaE=EKeep_closing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="¬Light_Initia=Green">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Approaching=Exit">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Null_T=Exit">
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="Light_State={Light_Initia,Red,Green,Red_Flash}">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="partition(Light_Order,{Turn_Green},{Turn_Red},{Turn_RedFlash},{Null_S})">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p67" org.eventb.core.predicate="EBarrier_infor∈EBarrier_States">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EBarrier_infor" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Null_T=MA">
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬KeepGoing=Clear_Ctrl">
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="¬Green=Red_Flash">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p64" org.eventb.core.predicate="train⊆TRAIN"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬reclear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="¬Red=Red_Flash">
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p66" org.eventb.core.predicate="TrainOrder∈Train_Ctrl">
+<org.eventb.core.prIdent name="TrainOrder" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="EBarrier_States={InitiaE,Eclosing,EKeep_closing,Eopening,EKeep_opening}">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="¬Eclosing=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p72" org.eventb.core.predicate="n∈train">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬Unclear=reclear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="¬Eclosing=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="¬InitiaE=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="partition(Light_State,{Light_Initia},{Red},{Green},{Red_Flash})">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p68" org.eventb.core.predicate="IBarrier_infor∈IBarrier_States">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IBarrier_infor" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="¬Turn_Green=Turn_RedFlash">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p73" org.eventb.core.predicate="n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="partition(Crossing_Check,{Unclear},{clear},{reclear},{Null})">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="¬IKeep_closing=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Closing=Exit">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p69" org.eventb.core.predicate="Light_Ctrl∈Light_Order">
+<org.eventb.core.prIdent name="Light_Ctrl" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p70" org.eventb.core.predicate="Light_Information∈Light_State">
+<org.eventb.core.prIdent name="Light_Information" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="¬Light_Initia=Red">
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="partition(Train_Ctrl,{Brake},{KeepGoing},{Clear_Ctrl})">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Approaching=Closing">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="partition(IBarrier_States,{InitiaI},{Iclosing},{IKeep_closing},{Iopening})">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="¬Turn_Green=Turn_Red">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Null_T=Approaching">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p74" org.eventb.core.predicate="n∈dom(train_position)">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Unclear=clear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="¬InitiaI=Iclosing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬Brake=Clear_Ctrl">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬InitiaE=Eclosing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="¬Eclosing=EKeep_closing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(TRAIN_POSITION,{Null_T},{MA},{Approaching},{Closing},{Exit})">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="¬Red=Green">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="¬Turn_Red=Null_S">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬clear=reclear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬MA=Closing">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="Light_Order={Turn_Green,Turn_Red,Turn_RedFlash,Null_S}">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬MA=Exit">
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Crossing_Check={Unclear,clear,reclear,Null}">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="¬Turn_Red=Turn_RedFlash">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="¬Light_Initia=Red_Flash">
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="TRAIN_POSITION={Null_T,MA,Approaching,Closing,Exit}">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="¬InitiaI=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p65" org.eventb.core.predicate="RLC_states∈Crossing_Check">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="RLC_states" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p75" org.eventb.core.predicate="train_position∈TRAIN ⇸ TRAIN_POSITION"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬InitiaE=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="¬Iclosing=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p71" org.eventb.core.predicate="n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬clear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬Brake=KeepGoing">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="partition(EBarrier_States,{InitiaE},{Eclosing},{EKeep_closing},{Eopening},{EKeep_opening})">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Null_T=Closing">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬Unclear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="¬Turn_RedFlash=Null_S">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="train_position∈train → TRAIN_POSITION"/>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="¬Eopening=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="¬EKeep_closing=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p63" org.eventb.core.predicate="track⊆TRACK">
+<org.eventb.core.prIdent name="TRACK" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="IBarrier_States={InitiaI,Iclosing,IKeep_closing,Iopening}">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="train"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Light_TurnGreen/grd1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="n" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="TRAIN,TRAIN_POSITION">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRAIN_POSITION,{Null_T},{MA},{Approaching},{Closing},{Exit}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Crossing_Check,{Unclear},{clear},{reclear},{Null}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15,p16,p17,p18,p19,p20,p21"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p15,p16,p17,p18,p19,p20,p21"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Train_Ctrl,{Brake},{KeepGoing},{Clear_Ctrl}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23,p24,p25,p26"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p23,p24,p25,p26"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(EBarrier_States,{InitiaE},{Eclosing},{EKeep_closing},{Eopening},{EKeep_opening}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(IBarrier_States,{InitiaI},{Iclosing},{IKeep_closing},{Iopening}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p40,p41,p42,p43,p44,p45,p46"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p40,p41,p42,p43,p44,p45,p46"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Light_State,{Light_Initia},{Red},{Green},{Red_Flash}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p47" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48,p49,p50,p51,p52,p53,p54"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p48,p49,p50,p51,p52,p53,p54"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Light_Order,{Turn_Green},{Turn_Red},{Turn_RedFlash},{Null_S}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p55" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56,p57,p58,p59,p60,p61,p62"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p56,p57,p58,p59,p60,p61,p62"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p63"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p64"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p65"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p66"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p67"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p68"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p69"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p70"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees n)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p71">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p71" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p73" org.eventb.core.prHyps="p72">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p73" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p74">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p74" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p72">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p72" org.eventb.core.prHyps="p72"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p75">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p75" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train_position" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="¬Iclosing=IKeep_closing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="Train_Ctrl={Brake,KeepGoing,Clear_Ctrl}">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="¬EKeep_closing=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="¬Turn_Green=Null_S">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="¬InitiaI=IKeep_closing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬MA=Approaching">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬InitiaE=EKeep_closing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="¬Light_Initia=Green">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Approaching=Exit">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Null_T=Exit">
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="Light_State={Light_Initia,Red,Green,Red_Flash}">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="partition(Light_Order,{Turn_Green},{Turn_Red},{Turn_RedFlash},{Null_S})">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p67" org.eventb.core.predicate="EBarrier_infor∈EBarrier_States">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EBarrier_infor" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Null_T=MA">
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬KeepGoing=Clear_Ctrl">
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="¬Green=Red_Flash">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p64" org.eventb.core.predicate="train⊆TRAIN"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬reclear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="¬Red=Red_Flash">
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p66" org.eventb.core.predicate="TrainOrder∈Train_Ctrl">
+<org.eventb.core.prIdent name="TrainOrder" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="EBarrier_States={InitiaE,Eclosing,EKeep_closing,Eopening,EKeep_opening}">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="¬Eclosing=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p72" org.eventb.core.predicate="n∈train">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬Unclear=reclear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="¬Eclosing=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="¬InitiaE=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="partition(Light_State,{Light_Initia},{Red},{Green},{Red_Flash})">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p68" org.eventb.core.predicate="IBarrier_infor∈IBarrier_States">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IBarrier_infor" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="¬Turn_Green=Turn_RedFlash">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p73" org.eventb.core.predicate="n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="partition(Crossing_Check,{Unclear},{clear},{reclear},{Null})">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="¬IKeep_closing=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Closing=Exit">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p69" org.eventb.core.predicate="Light_Ctrl∈Light_Order">
+<org.eventb.core.prIdent name="Light_Ctrl" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p70" org.eventb.core.predicate="Light_Information∈Light_State">
+<org.eventb.core.prIdent name="Light_Information" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="¬Light_Initia=Red">
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="partition(Train_Ctrl,{Brake},{KeepGoing},{Clear_Ctrl})">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Approaching=Closing">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="partition(IBarrier_States,{InitiaI},{Iclosing},{IKeep_closing},{Iopening})">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="¬Turn_Green=Turn_Red">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Null_T=Approaching">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p74" org.eventb.core.predicate="n∈dom(train_position)">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Unclear=clear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="¬InitiaI=Iclosing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬Brake=Clear_Ctrl">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬InitiaE=Eclosing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="¬Eclosing=EKeep_closing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(TRAIN_POSITION,{Null_T},{MA},{Approaching},{Closing},{Exit})">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="¬Red=Green">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="¬Turn_Red=Null_S">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬clear=reclear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬MA=Closing">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="Light_Order={Turn_Green,Turn_Red,Turn_RedFlash,Null_S}">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬MA=Exit">
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Crossing_Check={Unclear,clear,reclear,Null}">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="¬Turn_Red=Turn_RedFlash">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="¬Light_Initia=Red_Flash">
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="TRAIN_POSITION={Null_T,MA,Approaching,Closing,Exit}">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="¬InitiaI=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p65" org.eventb.core.predicate="RLC_states∈Crossing_Check">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="RLC_states" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p75" org.eventb.core.predicate="train_position∈TRAIN ⇸ TRAIN_POSITION"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬InitiaE=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="¬Iclosing=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p71" org.eventb.core.predicate="n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬clear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬Brake=KeepGoing">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="partition(EBarrier_States,{InitiaE},{Eclosing},{EKeep_closing},{Eopening},{EKeep_opening})">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Null_T=Closing">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬Unclear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="¬Turn_RedFlash=Null_S">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="train_position∈train → TRAIN_POSITION"/>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="¬Eopening=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="¬EKeep_closing=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p63" org.eventb.core.predicate="track⊆TRACK">
+<org.eventb.core.prIdent name="TRACK" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="IBarrier_States={InitiaI,Iclosing,IKeep_closing,Iopening}">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="train"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Light_TurnRed/grd1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="n" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="TRAIN,TRAIN_POSITION">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRAIN_POSITION,{Null_T},{MA},{Approaching},{Closing},{Exit}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Crossing_Check,{Unclear},{clear},{reclear},{Null}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15,p16,p17,p18,p19,p20,p21"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p15,p16,p17,p18,p19,p20,p21"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Train_Ctrl,{Brake},{KeepGoing},{Clear_Ctrl}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23,p24,p25,p26"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p23,p24,p25,p26"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(EBarrier_States,{InitiaE},{Eclosing},{EKeep_closing},{Eopening},{EKeep_opening}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(IBarrier_States,{InitiaI},{Iclosing},{IKeep_closing},{Iopening}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p40,p41,p42,p43,p44,p45,p46"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p40,p41,p42,p43,p44,p45,p46"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Light_State,{Light_Initia},{Red},{Green},{Red_Flash}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p47" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48,p49,p50,p51,p52,p53,p54"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p48,p49,p50,p51,p52,p53,p54"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Light_Order,{Turn_Green},{Turn_Red},{Turn_RedFlash},{Null_S}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p55" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56,p57,p58,p59,p60,p61,p62"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p56,p57,p58,p59,p60,p61,p62"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p63">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p64"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p65"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p66"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p67"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p68"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p69"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p70"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p71"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p63" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p73" org.eventb.core.prHyps="p72">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees n)" org.eventb.core.prGoal="p73" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p74">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p74" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p76" org.eventb.core.prHyps="p75">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p76" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p77">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p77" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p75">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p75" org.eventb.core.prHyps="p75"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p78">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p78" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train_position" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="¬Iclosing=IKeep_closing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="Train_Ctrl={Brake,KeepGoing,Clear_Ctrl}">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="¬EKeep_closing=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="¬Turn_Green=Null_S">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="¬InitiaI=IKeep_closing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬MA=Approaching">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬InitiaE=EKeep_closing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="¬Light_Initia=Green">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Approaching=Exit">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Null_T=Exit">
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="Light_State={Light_Initia,Red,Green,Red_Flash}">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="partition(Light_Order,{Turn_Green},{Turn_Red},{Turn_RedFlash},{Null_S})">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p72" org.eventb.core.predicate="¬Exit∈ran(train_position)"/>
+<org.eventb.core.prPred name="p68" org.eventb.core.predicate="EBarrier_infor∈EBarrier_States">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EBarrier_infor" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Null_T=MA">
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬KeepGoing=Clear_Ctrl">
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="¬Green=Red_Flash">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p65" org.eventb.core.predicate="train⊆TRAIN"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬reclear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="¬Red=Red_Flash">
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p67" org.eventb.core.predicate="TrainOrder∈Train_Ctrl">
+<org.eventb.core.prIdent name="TrainOrder" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="EBarrier_States={InitiaE,Eclosing,EKeep_closing,Eopening,EKeep_opening}">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="¬Eclosing=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p75" org.eventb.core.predicate="n∈train">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬Unclear=reclear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="¬Eclosing=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="¬InitiaE=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="partition(Light_State,{Light_Initia},{Red},{Green},{Red_Flash})">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p69" org.eventb.core.predicate="IBarrier_infor∈IBarrier_States">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IBarrier_infor" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="¬Turn_Green=Turn_RedFlash">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p76" org.eventb.core.predicate="n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="partition(Crossing_Check,{Unclear},{clear},{reclear},{Null})">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="¬IKeep_closing=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Closing=Exit">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p70" org.eventb.core.predicate="Light_Ctrl∈Light_Order">
+<org.eventb.core.prIdent name="Light_Ctrl" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p71" org.eventb.core.predicate="Light_Information∈Light_State">
+<org.eventb.core.prIdent name="Light_Information" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="¬Light_Initia=Red">
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="partition(Train_Ctrl,{Brake},{KeepGoing},{Clear_Ctrl})">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Approaching=Closing">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="partition(IBarrier_States,{InitiaI},{Iclosing},{IKeep_closing},{Iopening})">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="¬Turn_Green=Turn_Red">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Null_T=Approaching">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p77" org.eventb.core.predicate="n∈dom(train_position)">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Unclear=clear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="¬InitiaI=Iclosing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p73" org.eventb.core.predicate="∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬Brake=Clear_Ctrl">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬InitiaE=Eclosing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="¬Eclosing=EKeep_closing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="train_position∼[{Exit}]=(∅ ⦂ ℙ(TRAIN))⇒(∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(TRAIN_POSITION,{Null_T},{MA},{Approaching},{Closing},{Exit})">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="¬Red=Green">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="¬Turn_Red=Null_S">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬clear=reclear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬MA=Closing">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="Light_Order={Turn_Green,Turn_Red,Turn_RedFlash,Null_S}">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬MA=Exit">
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Crossing_Check={Unclear,clear,reclear,Null}">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="¬Turn_Red=Turn_RedFlash">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="¬Light_Initia=Red_Flash">
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="TRAIN_POSITION={Null_T,MA,Approaching,Closing,Exit}">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="¬InitiaI=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p66" org.eventb.core.predicate="RLC_states∈Crossing_Check">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="RLC_states" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p78" org.eventb.core.predicate="train_position∈TRAIN ⇸ TRAIN_POSITION"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬InitiaE=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="¬Iclosing=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p74" org.eventb.core.predicate="n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬clear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p63" org.eventb.core.predicate="¬Exit∈ran(train_position)⇒(∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION)"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬Brake=KeepGoing">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="partition(EBarrier_States,{InitiaE},{Eclosing},{EKeep_closing},{Eopening},{EKeep_opening})">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Null_T=Closing">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬Unclear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="¬Turn_RedFlash=Null_S">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="train_position∈train → TRAIN_POSITION"/>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="¬Eopening=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="¬EKeep_closing=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p64" org.eventb.core.predicate="track⊆TRACK">
+<org.eventb.core.prIdent name="TRACK" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="IBarrier_States={InitiaI,Iclosing,IKeep_closing,Iopening}">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="train"/>
+<org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="Light_TurnRed/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="n" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Light_Order,TRAIN,TRAIN_POSITION">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRAIN_POSITION,{Null_T},{MA},{Approaching},{Closing},{Exit}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Crossing_Check,{Unclear},{clear},{reclear},{Null}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15,p16,p17,p18,p19,p20,p21"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p15,p16,p17,p18,p19,p20,p21"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Train_Ctrl,{Brake},{KeepGoing},{Clear_Ctrl}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p22" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23,p24,p25,p26"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p23,p24,p25,p26"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(EBarrier_States,{InitiaE},{Eclosing},{EKeep_closing},{Eopening},{EKeep_opening}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(IBarrier_States,{InitiaI},{Iclosing},{IKeep_closing},{Iopening}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p40,p41,p42,p43,p44,p45,p46"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p40,p41,p42,p43,p44,p45,p46"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Light_State,{Light_Initia},{Red},{Green},{Red_Flash}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p47" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48,p49,p50,p51,p52,p53,p54"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p48,p49,p50,p51,p52,p53,p54"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Light_Order,{Turn_Green},{Turn_Red},{Turn_RedFlash},{Null_S}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p55" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56,p57,p58,p59,p60,p61,p62"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p56,p57,p58,p59,p60,p61,p62"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p63" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p64"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p65" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p66"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p67" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p68"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p69"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p70"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p71"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p72"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p73"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p74"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p75"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p76"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p78" org.eventb.core.prHyps="p77">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees n)" org.eventb.core.prGoal="p78" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p79">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p79" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p81" org.eventb.core.prHyps="p80">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p81" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p82">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with Light_Ctrl=Turn_RedFlash" org.eventb.core.prHyps="p77">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p68" org.eventb.core.prInfHyps="p83"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p68"/>
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p83" org.eventb.core.prHyps="p60" org.eventb.core.prInfHyps="p84"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p84"/>
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p82" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p80">
+<org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p80" org.eventb.core.prHyps="p80"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p85">
+<org.eventb.core.prRule name="r10" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p85" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="Light_Ctrl" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train_position" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="¬Iclosing=IKeep_closing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="Train_Ctrl={Brake,KeepGoing,Clear_Ctrl}">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="¬EKeep_closing=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="¬Turn_Green=Null_S">
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="¬InitiaI=IKeep_closing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬MA=Approaching">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬InitiaE=EKeep_closing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="¬Light_Initia=Green">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Approaching=Exit">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p83" org.eventb.core.predicate="¬Turn_RedFlash=Turn_Red">
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Null_T=Exit">
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="Light_State={Light_Initia,Red,Green,Red_Flash}">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="partition(Light_Order,{Turn_Green},{Turn_Red},{Turn_RedFlash},{Null_S})">
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p73" org.eventb.core.predicate="EBarrier_infor∈EBarrier_States">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EBarrier_infor" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Null_T=MA">
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬KeepGoing=Clear_Ctrl">
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="¬Green=Red_Flash">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p70" org.eventb.core.predicate="train⊆TRAIN"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬reclear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="¬Red=Red_Flash">
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p72" org.eventb.core.predicate="TrainOrder∈Train_Ctrl">
+<org.eventb.core.prIdent name="TrainOrder" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="EBarrier_States={InitiaE,Eclosing,EKeep_closing,Eopening,EKeep_opening}">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="¬Eclosing=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p80" org.eventb.core.predicate="n∈train">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬Unclear=reclear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="¬Eclosing=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="¬InitiaE=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="partition(Light_State,{Light_Initia},{Red},{Green},{Red_Flash})">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p67" org.eventb.core.predicate="Light_Ctrl≠Turn_Red">
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p74" org.eventb.core.predicate="IBarrier_infor∈IBarrier_States">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IBarrier_infor" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="¬Turn_Green=Turn_RedFlash">
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p81" org.eventb.core.predicate="n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="partition(Crossing_Check,{Unclear},{clear},{reclear},{Null})">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="¬IKeep_closing=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Closing=Exit">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p75" org.eventb.core.predicate="Light_Ctrl∈Light_Order"/>
+<org.eventb.core.prPred name="p76" org.eventb.core.predicate="Light_Information∈Light_State">
+<org.eventb.core.prIdent name="Light_Information" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="¬Light_Initia=Red">
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="partition(Train_Ctrl,{Brake},{KeepGoing},{Clear_Ctrl})">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Approaching=Closing">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p63" org.eventb.core.predicate="train_position∼[{Exit}]=(∅ ⦂ ℙ(TRAIN))⇒(∃n⦂TRAIN·n∈train∧train_position(n)=Approaching)">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="partition(IBarrier_States,{InitiaI},{Iclosing},{IKeep_closing},{Iopening})">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="¬Turn_Green=Turn_Red">
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Null_T=Approaching">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="Light_Ctrl=Turn_RedFlash⇒(∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION)"/>
+<org.eventb.core.prPred name="p82" org.eventb.core.predicate="n∈dom(train_position)">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Unclear=clear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="¬InitiaI=Iclosing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p78" org.eventb.core.predicate="∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬Brake=Clear_Ctrl">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬InitiaE=Eclosing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="¬Eclosing=EKeep_closing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(TRAIN_POSITION,{Null_T},{MA},{Approaching},{Closing},{Exit})">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p65" org.eventb.core.predicate="train_position∼[{Exit}]=(∅ ⦂ ℙ(TRAIN))⇒(∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION)">
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="¬Red=Green">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="¬Turn_Red=Null_S">
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p84" org.eventb.core.predicate="¬⊥"/>
+<org.eventb.core.prPred name="p64" org.eventb.core.predicate="¬Exit∈ran(train_position)⇒(∃n⦂TRAIN·n∈train∧train_position(n)=Approaching)">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬clear=reclear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬MA=Closing">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p77" org.eventb.core.predicate="Light_Ctrl=Turn_RedFlash"/>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="Light_Order={Turn_Green,Turn_Red,Turn_RedFlash,Null_S}">
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬MA=Exit">
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Crossing_Check={Unclear,clear,reclear,Null}">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="¬Turn_Red=Turn_RedFlash">
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="¬Light_Initia=Red_Flash">
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="TRAIN_POSITION={Null_T,MA,Approaching,Closing,Exit}">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p68" org.eventb.core.predicate="¬Light_Ctrl=Turn_Red">
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="¬InitiaI=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p71" org.eventb.core.predicate="RLC_states∈Crossing_Check">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="RLC_states" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p85" org.eventb.core.predicate="train_position∈TRAIN ⇸ TRAIN_POSITION"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬InitiaE=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="¬Iclosing=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p79" org.eventb.core.predicate="n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION">
+<org.eventb.core.prIdent name="n" org.eventb.core.type="TRAIN"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬clear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p66" org.eventb.core.predicate="¬Exit∈ran(train_position)⇒(∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION)">
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬Brake=KeepGoing">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="partition(EBarrier_States,{InitiaE},{Eclosing},{EKeep_closing},{Eopening},{EKeep_opening})">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Null_T=Closing">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬Unclear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="¬Turn_RedFlash=Null_S">
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="train_position∈train → TRAIN_POSITION"/>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="¬Eopening=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="¬EKeep_closing=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p69" org.eventb.core.predicate="track⊆TRACK">
+<org.eventb.core.prIdent name="TRACK" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="IBarrier_States={InitiaI,Iclosing,IKeep_closing,Iopening}">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="train"/>
+<org.eventb.core.prReas name="r10" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r9" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="EBarrier_Keepopening/RLC_states/EQL" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRAIN_POSITION,{Null_T},{MA},{Approaching},{Closing},{Exit}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Crossing_Check,{Unclear},{clear},{reclear},{Null}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13,p14,p15,p16,p17,p18,p19"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p13,p14,p15,p16,p17,p18,p19"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Train_Ctrl,{Brake},{KeepGoing},{Clear_Ctrl}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21,p22,p23,p24"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p21,p22,p23,p24"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(EBarrier_States,{InitiaE},{Eclosing},{EKeep_closing},{Eopening},{EKeep_opening}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(IBarrier_States,{InitiaI},{Iclosing},{IKeep_closing},{Iopening}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p37" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p38,p39,p40,p41,p42,p43,p44"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p38,p39,p40,p41,p42,p43,p44"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Light_State,{Light_Initia},{Red},{Green},{Red_Flash}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p45" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p46,p47,p48,p49,p50,p51,p52"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p46,p47,p48,p49,p50,p51,p52"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Light_Order,{Turn_Green},{Turn_Red},{Turn_RedFlash},{Null_S}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p53" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p54,p55,p56,p57,p58,p59,p60"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p54,p55,p56,p57,p58,p59,p60"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p61" org.eventb.core.prHyps="p63" org.eventb.core.prInfHyps="p62"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p62"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p64"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p65"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p66"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p67"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p68"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p69"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p70"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p71"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="¬Iclosing=IKeep_closing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="Train_Ctrl={Brake,KeepGoing,Clear_Ctrl}">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="(∃n⦂TRAIN·n∈train∧train_position(n)=Approaching)∨(⊤∧((∃n⦂TRAIN·n∈train∧train_position(n)=Closing)∨⊤))">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train_position" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="¬EKeep_closing=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="¬Turn_Green=Null_S">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="¬InitiaI=IKeep_closing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬MA=Approaching">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="¬InitiaE=EKeep_closing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="¬Light_Initia=Green">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Approaching=Exit">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Null_T=Exit">
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="Light_State={Light_Initia,Red,Green,Red_Flash}">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="partition(Light_Order,{Turn_Green},{Turn_Red},{Turn_RedFlash},{Null_S})">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p68" org.eventb.core.predicate="EBarrier_infor∈EBarrier_States">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EBarrier_infor" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Null_T=MA">
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬KeepGoing=Clear_Ctrl">
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="¬Green=Red_Flash">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p65" org.eventb.core.predicate="train⊆TRAIN">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬reclear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="¬Red=Red_Flash">
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p67" org.eventb.core.predicate="TrainOrder∈Train_Ctrl">
+<org.eventb.core.prIdent name="TrainOrder" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="EBarrier_States={InitiaE,Eclosing,EKeep_closing,Eopening,EKeep_opening}">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="¬Eclosing=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬Unclear=reclear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="¬Eclosing=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬InitiaE=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="partition(Light_State,{Light_Initia},{Red},{Green},{Red_Flash})">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p69" org.eventb.core.predicate="IBarrier_infor∈IBarrier_States">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IBarrier_infor" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="¬Turn_Green=Turn_RedFlash">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(Crossing_Check,{Unclear},{clear},{reclear},{Null})">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="¬IKeep_closing=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Closing=Exit">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p70" org.eventb.core.predicate="Light_Ctrl∈Light_Order">
+<org.eventb.core.prIdent name="Light_Ctrl" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p71" org.eventb.core.predicate="Light_Information∈Light_State">
+<org.eventb.core.prIdent name="Light_Information" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="¬Light_Initia=Red">
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="partition(Train_Ctrl,{Brake},{KeepGoing},{Clear_Ctrl})">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Approaching=Closing">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="partition(IBarrier_States,{InitiaI},{Iclosing},{IKeep_closing},{Iopening})">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="¬Turn_Green=Turn_Red">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Null_T=Approaching">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Unclear=clear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="¬InitiaI=Iclosing">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p63" org.eventb.core.predicate="∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION">
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train_position" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬Brake=Clear_Ctrl">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Clear_Ctrl" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="¬InitiaE=Eclosing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬Eclosing=EKeep_closing">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(TRAIN_POSITION,{Null_T},{MA},{Approaching},{Closing},{Exit})">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="¬Red=Green">
+<org.eventb.core.prIdent name="Green" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="¬Turn_Red=Null_S">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬clear=reclear">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬MA=Closing">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="Light_Order={Turn_Green,Turn_Red,Turn_RedFlash,Null_S}">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Green" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="(∃n⦂TRAIN·n∈train∧train_position(n)=Approaching)∨((∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION)∧((∃n⦂TRAIN·n∈train∧train_position(n)=Closing)∨(∀n⦂TRAIN·n∈train⇒n∈dom(train_position)∧train_position∈TRAIN ⇸ TRAIN_POSITION)))">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+<org.eventb.core.prIdent name="train" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.prIdent name="train_position" org.eventb.core.type="ℙ(TRAIN×TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬MA=Exit">
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Crossing_Check={Unclear,clear,reclear,Null}">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="reclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="¬Turn_Red=Turn_RedFlash">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Turn_Red" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="¬Light_Initia=Red_Flash">
+<org.eventb.core.prIdent name="Light_Initia" org.eventb.core.type="Light_State"/>
+<org.eventb.core.prIdent name="Light_State" org.eventb.core.type="ℙ(Light_State)"/>
+<org.eventb.core.prIdent name="Red_Flash" org.eventb.core.type="Light_State"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="TRAIN_POSITION={Null_T,MA,Approaching,Closing,Exit}">
+<org.eventb.core.prIdent name="Approaching" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Exit" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="MA" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="¬InitiaI=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p66" org.eventb.core.predicate="RLC_states∈Crossing_Check">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="RLC_states" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬InitiaE=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="¬Iclosing=Iopening">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬clear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="clear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬Brake=KeepGoing">
+<org.eventb.core.prIdent name="Brake" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="KeepGoing" org.eventb.core.type="Train_Ctrl"/>
+<org.eventb.core.prIdent name="Train_Ctrl" org.eventb.core.type="ℙ(Train_Ctrl)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="partition(EBarrier_States,{InitiaE},{Eclosing},{EKeep_closing},{Eopening},{EKeep_opening})">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eclosing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaE" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Null_T=Closing">
+<org.eventb.core.prIdent name="Closing" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="Null_T" org.eventb.core.type="TRAIN_POSITION"/>
+<org.eventb.core.prIdent name="TRAIN_POSITION" org.eventb.core.type="ℙ(TRAIN_POSITION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬Unclear=Null">
+<org.eventb.core.prIdent name="Crossing_Check" org.eventb.core.type="ℙ(Crossing_Check)"/>
+<org.eventb.core.prIdent name="Null" org.eventb.core.type="Crossing_Check"/>
+<org.eventb.core.prIdent name="Unclear" org.eventb.core.type="Crossing_Check"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="¬Turn_RedFlash=Null_S">
+<org.eventb.core.prIdent name="Light_Order" org.eventb.core.type="ℙ(Light_Order)"/>
+<org.eventb.core.prIdent name="Null_S" org.eventb.core.type="Light_Order"/>
+<org.eventb.core.prIdent name="Turn_RedFlash" org.eventb.core.type="Light_Order"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="¬Eopening=EKeep_opening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_opening" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="¬EKeep_closing=Eopening">
+<org.eventb.core.prIdent name="EBarrier_States" org.eventb.core.type="ℙ(EBarrier_States)"/>
+<org.eventb.core.prIdent name="EKeep_closing" org.eventb.core.type="EBarrier_States"/>
+<org.eventb.core.prIdent name="Eopening" org.eventb.core.type="EBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p64" org.eventb.core.predicate="track⊆TRACK">
+<org.eventb.core.prIdent name="TRACK" org.eventb.core.type="ℙ(TRACK)"/>
+<org.eventb.core.prIdent name="track" org.eventb.core.type="ℙ(TRACK)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="IBarrier_States={InitiaI,Iclosing,IKeep_closing,Iopening}">
+<org.eventb.core.prIdent name="IBarrier_States" org.eventb.core.type="ℙ(IBarrier_States)"/>
+<org.eventb.core.prIdent name="IKeep_closing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iclosing" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="InitiaI" org.eventb.core.type="IBarrier_States"/>
+<org.eventb.core.prIdent name="Iopening" org.eventb.core.type="IBarrier_States"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>
